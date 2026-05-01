@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Word/Office temp files
+~$*.docx
+~$*.doc
+~$*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+
+# Local outputs (do not version-control user runs)
+results/
+output/
+*.tmp
+
+# Third-party redistribution-restricted material
+# (Yang-Yu Liu's ControllabilityAnalysis and ControlCentrality are NOT
+# allowed to be redistributed - keep them out of the repo)
+ControllabilityAnalysis_v*/
+ControlCentrality_v*/
+*.rar

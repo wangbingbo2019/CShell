@@ -1,0 +1,22 @@
+name: cshell201910
+channels:
+  - defaults
+dependencies:
+  # The CShell pipeline is locked to the original PCshell notebook author's
+  # environment - the Anaconda 2019.10 distribution.  These exact pins are
+  # required because:
+  #   * sympy 1.4's Matrix(...).rref() on a float64 matrix correctly zeroes
+  #     dependent rows; sympy >= ~1.5 leaves tiny float residues that break
+  #     the zero-row filter in `cshell/step8_cp_eff.py`, producing NaN energy.
+  #   * The legacy notebooks did not pin a random seed, so any newer-libs
+  #     "drop-in" replacement would diverge numerically too.
+  - python=3.7.4
+  - numpy=1.17.2
+  - pandas=0.25.1
+  - networkx=2.3
+  - sympy=1.4
+  # optional (only needed if you want to open the original PCshell notebooks
+  # under jupyter; the CLI scripts under scripts/ do not need them)
+  - ipykernel=5.1.2
+  - ipython=7.8.0
+  - notebook=6.0.1

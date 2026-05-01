@@ -1,0 +1,15 @@
+# CShell is locked to the original PCshell notebook author's environment
+# (Anaconda 2019.10; Python 3.7.4).  The PINS BELOW MUST MATCH environment.yml.
+#
+# Recommended setup is via conda:
+#     conda env create -f environment.yml
+#     conda activate cshell201910
+#
+# This requirements.txt is provided for reference / pip-only setups; note
+# that pip cannot pin Python itself, so you must independently ensure you
+# are running Python 3.7.4 before `pip install -r requirements.txt`.
+
+numpy==1.17.2
+pandas==0.25.1
+networkx==2.3
+sympy==1.4
