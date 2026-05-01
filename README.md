@@ -128,7 +128,7 @@ See `THIRD_PARTY.md` for the expected data flow and citation details.
 
 ## Directory Layout
 
-Scheme A keeps only the core package layout in the repository:
+Core package layout:
 
 ```text
 Cshell/

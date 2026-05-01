@@ -12,8 +12,7 @@ This document explains:
   1. Which steps of the paper they cover.
   2. How to obtain them.
   3. Their license restrictions.
-  4. The required citation if you publish results that depend on them.
-  5. How their outputs flow into CShell's Python pipeline.
+  4. How their outputs flow into CShell's Python pipeline.
 
 ================================================================================
 
@@ -63,21 +62,7 @@ default.
 
 ================================================================================
 
-## 3. Required citations
-
-If you use CShell to produce results in a paper, the *minimum*
-required citations are:
-
-  * Our paper: [PLEASE FILL once accepted].
-  * Liu Y-Y, Slotine J-J, Barabasi A-L. *Controllability of complex
-    networks*. **Nature** 473, 167-173 (2011).
-  * Liu Y-Y, Slotine J-J, Barabasi A-L. *Control Centrality and
-    Hierarchical Structure in Complex Networks*. **PLoS ONE** 7(9):
-    e44459 (2012).
-
-================================================================================
-
-## 4. How to obtain the third-party packages
+## 3. How to obtain the third-party packages
 
 Contact the corresponding author (Yang-Yu Liu) directly:
 
@@ -87,7 +72,7 @@ Contact the corresponding author (Yang-Yu Liu) directly:
 
 ================================================================================
 
-## 5. Data flow (how the third-party outputs feed CShell)
+## 4. Data flow (how the third-party outputs feed CShell)
 
 ```
 +-------------------------+         +-------------------------------+
@@ -160,7 +145,7 @@ Contact the corresponding author (Yang-Yu Liu) directly:
 
 ================================================================================
 
-## 6. Re-running Step 1 / Step 5 yourself
+## 5. Re-running Step 1 / Step 5 yourself
 
 If you change the network you must re-run Step 1+2 once for the new
 network (this regenerates `*.nodetype`, `*.linktype`, `Indispensable.txt`
@@ -182,7 +167,7 @@ The third-party READMEs explain installation and usage:
         # and     ./data/observation_subgraph.txt.ControlCentrality
 
 Then place the resulting files at the paths CShell expects (see
-`README.md`, section III.2 "Inputs") and re-run `scripts/run_pipeline.py`.
+`README.md`, "Inputs") and re-run `scripts/run_pipeline.py`.
 
 The two third-party READMEs are reproduced **only inside the original
 distribution packages**; we do not include them here.
